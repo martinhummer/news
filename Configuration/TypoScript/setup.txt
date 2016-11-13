@@ -273,3 +273,20 @@ config.tx_extbase.persistence.classes {
 		}
 	}
 }
+
+lib.structuredDataMarkupNews < lib.structuredDataMarkup
+lib.structuredDataMarkupNews {
+	settings {
+		entity = Portrino\PxSemantic\SchemaOrg\Article
+		processors {
+			# sets the News specific values
+			0 {
+				className = GeorgRinger\News\Processor\NewsProcessor
+				settings {
+					newsItemUid = 1
+				}
+			}
+		}
+	}
+
+}

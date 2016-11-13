@@ -13,6 +13,12 @@
 <f:section name="content">
 	<f:if condition="{newsItem}">
 		<f:then>
+			<n:extensionLoaded extensionKey="px_semantic">
+				<f:then>
+					{f:cObject(typoscriptObjectPath: 'lib.structuredDataMarkupNews')}
+				</f:then>
+			</n:extensionLoaded>
+
 			<n:format.nothing>
 				<n:excludeDisplayedNews newsItem="{newsItem}" />
 				<f:if condition="{newsItem.alternativeTitle}">

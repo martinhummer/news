@@ -24,7 +24,8 @@
   },
   "suggest": {
     "dmitryd/typo3-dd-googlesitemap": "~2.0",
-    "reelworx/rx-shariff": "~7.0"
+    "reelworx/rx-shariff": "~7.0",
+    "portrino/px_semantic":"~2.1"
   },
   "require-dev": {
     "mikey179/vfsStream": "1.4.*@dev",
